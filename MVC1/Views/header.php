@@ -63,7 +63,8 @@
                     </div>
                 </div> -->
                 <a href="contact" class="nav-item nav-link">Contact</a>
-                <a href="register" class="nav-item nav-link">Sign Up</a>
+                <a href="register" class="nav-item nav-link">Sign up</a>
+                <a href="login" class="nav-item nav-link">Sign in</a>
             </div>
             <!-- <a href="" class="btn btn-primary py-4 px-lg-5 d-none d-lg-block">Join Now<i class="fa fa-arrow-right ms-3"></i></a> -->
         </div>
