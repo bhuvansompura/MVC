@@ -283,7 +283,7 @@
             </li><!-- End Dashboard Nav -->
 
             <li class="nav-item">
-              <a href="adduser">Add Users</a><br>
+              <a href="addusers">Add Users</a><br>
               <a href="viewusers">View All Users</a>
 
                 <!-- <a class="nav-link collapsed" data-bs-target="#components-nav" data-bs-toggle="collapse" href="#">

@@ -36,6 +36,26 @@ class Controller extends Model
                     include_once("Views/admin/dashboard.php");
                     include_once("Views/admin/adminfooter.php");
                     break;
+                case '/addusers':
+                    // include_once("Views/admin/adminheader.php");
+                    include_once("Views/admin/addusers.php");
+                    // include_once("Views/admin/adminfooter.php");
+                    if (isset($_POST['register'])) {
+                        array_pop($_POST);
+                        $hobbydata = implode(",", $_POST['hobby']);
+                        array_pop($_POST);
+                        // echo $hobbydata;
+                        $data = array_merge($_POST, array("hobby" => $hobbydata));
+                        $InsertRes = $this->register("studentsdata", $data);
+
+                        // echo "<pre>";
+                        // print_r($InsertRes);
+                        // echo "</pre>";
+                        if ($InsertRes['Code'] = 1) {
+                            header("location:viewusers");
+                        }
+                    }
+                    break;
                 case '/delete':
                     $DeleteRes = $this->Delete("studentsdata", array("id" => $_GET['userid']));
                     if ($DeleteRes['Code'] == 1) {
