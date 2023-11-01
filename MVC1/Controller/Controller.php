@@ -3,8 +3,7 @@
 session_start();
 require_once("Model/Model.php");
 
-class Controller extends Model
-{
+class Controller extends Model{
     public $baseURL = "";
     function __construct()
     {

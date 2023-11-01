@@ -32,8 +32,7 @@ class Model
         }
         return $ResponceData;
     }
-    function select($tbl, $where = null)
-    {
+    function select($tbl, $where = null) {
         $sql = " SELECT * FROM $tbl ";
         if ($where != null) {
             $sql .= " WHERE";
