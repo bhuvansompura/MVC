@@ -56,56 +56,23 @@ table{
 <body>
  <form action="" method="post">
 
-   <h1>REGISTRATION FORM</h1>
+   <h1>LOGIN FORM</h1>
    <div class="con">
      <table align="center" cellpadding = "10">
        <tr>
          <td>Name</td>
          <td><input type="text" name="name" id="name"></td>
     </tr>
+       <tr>
+         <td>Password</td>
+         <td><input type="password" name="password" id="password"></td>
+    </tr>
+    
+
     
     <tr>
-      <td>Age</td>
-      <td><input name="age" type="text" /></td>
-    </tr>
-    <tr>
-      <td>Gender</td>
-      <td><select name="gender">
-        <option>Male</option>
-        <option>Female</option>
-      </select></td>
-      <td>Mobile No</td>
-      <td><input name="mobile" type="text" /></td>
-    </tr>
-    <tr>
-      <td>Email Address</td>
-      <td colspan="4"><input name="email" type="text" size="62"></td>
-    </tr>
-    <tr>
-      <td>Address</td>
-      <td colspan="4"><textarea name="address" cols="53" rows="5"></textarea></td>
-    </tr>
-    <tr>
-      <td>City</td>
-      <td><input name="city" type="text" /></td>
-      <td>State</td>
-      <td><input name="state" type="text" /></td>
-    </tr>
-    <tr>
-      <td>Cuntry</td>
-      <td><input name="cuntry" type="text" /></td>
-      <td>Pin</td>
-      <td><input name="pin" type="text" /></td>
-    </tr>
-    <td> Password
-      <td>
-        <input type="password" name="password" id="password" required> 
-      </td>
-    </td>
-
-    <tr>
       <td></td>
-      <td colspan="4"><input type="submit" name="register" class="submit"></td>
+      <td colspan="4"><input type="submit" name="login" class="submit"></td>
       
     </tr>
     
