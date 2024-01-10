@@ -21,7 +21,7 @@
                 <th scope="col">panno</th>
                 <th scope="col">city</th>
                 <th scope="col">state</th>
-                <th scope="col">action</th>
+                
             </tr>
         </thead>
         <tbody>
@@ -39,13 +39,13 @@
                     <td><?php echo $value->panno ?></td>
                     <td><?php echo $value->city ?></td>
                     <td><?php echo $value->state ?></td>
-                    <td>
+                    <!-- <td>
                        <a href="edit?userid=<?php echo $value->id; ?>" class="btn btn-primary">edit</a>
                     
                     </td>
                     <td>
                             <a href="delete?userid=<?php echo $value->id; ?>" class="btn btn-danger">delete</a>
-                    </td>
+                    </td> -->
                 </tr>
 
             <?php }

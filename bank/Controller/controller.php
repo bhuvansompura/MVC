@@ -39,6 +39,12 @@ class controller extends Model{
                     include_once("View/users.php");
 
                     break;
+                    case '/delete':
+                        $DeleteRes = $this->Delete("bankmanage", array("id" => $_GET['userid']));
+                        if ($DeleteRes['Code'] == 1) {
+                            header("location:viewusers");
+                        }
+                        break;
                 case '/viewaccounts':
                     
                     $viewRes = $this->select("accounts",array('role_id'=> "2"));
